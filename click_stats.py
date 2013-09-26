@@ -62,7 +62,7 @@ class stats:
             elif i == len(var_range)-1 and v >= var_range[i]:
                 count[i]+=1
     def stats_count(self, file_name):    
-        for i in range(100):
+        for i in range(10):
             train = pd.read_csv(file_name, nrows = 100000*(i+1), skiprows = range(1,100000*i+2))
             train = train.fillna(0, inplace=True)           
             # count none-NAN values
