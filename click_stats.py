@@ -7,7 +7,7 @@
             data_stats.stats_count(file_name)
     check stats by: data_stats.$variable_i[0]
                     data_stats.$variable_i[1]
-                    for click and non_click stats
+                    for click and non_click stats respectively
 """
 
 import pandas as pd
