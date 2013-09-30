@@ -64,7 +64,7 @@ class stats:
     def stats_count(self, file_name):    
         for i in range(100):
             train = pd.read_csv(file_name, nrows = 100000*(i+1), skiprows = range(1,100000*i+2))
-            train = train.fillna(0, inplace=True)           
+            #train = train.fillna(0, inplace=True)           
             # count none-NAN values
             for key in self.var:               
                 self.none_NA_count[key] += train[key].shape[0]        
